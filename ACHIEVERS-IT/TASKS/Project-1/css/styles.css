@@ -14,7 +14,9 @@ header ul,
 footer,
 .teamMembers,
 .cartDetails,
-.cartFooter {
+.cartFooter,
+.contactDetails,
+.userDetails {
     display: flex;
 }
 
@@ -22,7 +24,9 @@ header section,
 header li,
 .popularProducts div,
 footer div,
-.teamMembers figure {
+.teamMembers figure,
+.contactDetails div,
+.userDetails div {
     flex: 1;
 }
 
@@ -72,17 +76,17 @@ footer li {
 }
 
 /* About Page */
-.aboutPageHeader {
+.navigationHeader {
     background-color: #f5f5f5;
 }
 
-.aboutPageHeader ul,
+.navigationHeader ul,
 .itemDescription ul {
     list-style: none;
     margin: 10px 10px;
 }
 
-.aboutPageHeader a {
+.navigationHeader a {
     color: #000;
     text-decoration: none;
     padding: 10px 10px;
@@ -179,7 +183,8 @@ p button {
     padding: 5px 20px;
 }
 
-.itemDescription li {
+.itemDescription li,
+.userDetails li {
     padding: 10px 10px;
 }
 
@@ -194,4 +199,63 @@ p button {
     flex: 12;
     text-decoration: none;
     color: #000;
+}
+
+/* Contact Page */
+.contactContainer {
+    max-width: 100%;
+}
+
+.map {
+    margin: 40px 100px;
+}
+
+.map iframe {
+    width: 100%;
+    height: 300px;
+}
+
+/* Contact Page - Contact Details */
+
+.contactDetails,
+.userDetails,
+.getInTouch>div {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.contactDetails div {
+    border: 1px solid #c2bdbd;
+    box-shadow: 3px 3px #dad6d6;
+    text-align: center;
+    margin: 10px;
+    padding: 25px 20px;
+}
+
+.contactDetails p {
+    padding: 5px;
+}
+
+/* Contact Page - User Details */
+.userDetails input,
+.userDetails textarea {
+    display: block;
+    width: 95%;
+    margin: 10px 10px 20px 10px;
+    padding: 10px;
+    background-color: #cac4c4;
+    border: none;
+}
+
+.getInTouch h2 {
+    padding: 40px 20px 20px;
+}
+
+.button {
+    background-color: orangered;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 10px 20px;
 }
