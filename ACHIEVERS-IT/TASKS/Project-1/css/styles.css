@@ -1,0 +1,197 @@
+/* This is a global CSS file, which contains CSS rules for all the pages of my applications */
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header styles */
+header,
+header ul,
+.popularProducts,
+footer,
+.teamMembers,
+.cartDetails,
+.cartFooter {
+    display: flex;
+}
+
+header section,
+header li,
+.popularProducts div,
+footer div,
+.teamMembers figure {
+    flex: 1;
+}
+
+header nav {
+    flex: 11;
+}
+
+header,
+footer {
+    background-color: #000;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+header ul {
+    /* This will not be applied unless the margin and padding is set to zero globally */
+    margin-top: 32px;
+}
+
+header li {
+    text-align: center;
+}
+
+/* Banner Styles */
+
+.bannerContainer img {
+    width: 100%;
+}
+
+h2 {
+    width: 80%;
+    margin: 0 auto;
+}
+
+footer * {
+    color: #fff;
+    text-align: center;
+}
+
+footer li {
+    padding: 5px 5px;
+    list-style: none;
+}
+
+/* About Page */
+.aboutPageHeader {
+    background-color: #f5f5f5;
+}
+
+.aboutPageHeader ul,
+.itemDescription ul {
+    list-style: none;
+    margin: 10px 10px;
+}
+
+.aboutPageHeader a {
+    color: #000;
+    text-decoration: none;
+    padding: 10px 10px;
+
+}
+
+/* About Page -Introduction Section */
+
+.achieversIntro,
+.team {
+    border: 1px solid #f5f5f5;
+    box-shadow: 3px 3px #ddd5d5;
+    margin: 40px 20px;
+    padding: 50px 30px;
+    text-align: center;
+}
+
+.achieversIntro p {
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.achieversIntro button {
+    background-color: #000;
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+
+button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* About Page- team Members section */
+.teamMembers img {
+    width: 280px;
+    height: 280px;
+}
+
+figure figcaption {
+    background-color: #f5f5f5;
+    padding: 10px 5px;
+    margin: 0 16px;
+    text-align: left;
+}
+
+figure p {
+    color: #c2bdbd;
+    font-size: medium;
+    padding: 2px 0;
+}
+
+/* Cart Page */
+/* Cart Page - Header */
+.cartContainer h1 {
+    text-align: center;
+    padding: 10px 0 40px;
+}
+
+/* Cart Page - Cart Items List */
+.cartItems>div {
+    border: 1px solid #d6c9c9;
+}
+
+.cartDetails {
+    align-items: center;
+    justify-content: center;
+}
+
+.cartItems {
+    margin: 0 100px;
+}
+
+.cartDetails img {
+    width: 150px;
+    height: 150px;
+    margin: 30px;
+    flex: 1;
+}
+
+.cartDetails div {
+    flex: 6;
+}
+
+.cartDetails p,
+.cartFooter p {
+    flex: 2;
+    text-align: center;
+}
+
+p button {
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 5px 20px;
+}
+
+.itemDescription li {
+    padding: 10px 10px;
+}
+
+/* Cart Page- Cart Footer */
+.cartFooter {
+    background-color: #dbd2d2;
+    margin: 20px 100px;
+    padding: 10px;
+}
+
+.cartFooter a {
+    flex: 12;
+    text-decoration: none;
+    color: #000;
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>facebook registration form</title>
+    <style>
+        body {
+            width: 400px;
+            margin: auto;
+        }
+
+        h1 {
+            font-family: Arial;
+            color: blue;
+            text-align: center;
+        }
+
+        form {
+            border: 1px solid black;
+            height: 600px;
+            width: 400px;
+            padding: 10px;
+            border-radius: 2%;
+        }
+
+        h2,
+        p {
+            text-align: center;
+        }
+
+        div>p {
+            text-align: left;
+        }
+
+        input {
+            font: 14px sans-serif;
+            margin: 5px;
+            height: 30px;
+        }
+
+        select {
+            height: 30px;
+            width: 60px;
+        }
+
+        button {
+            width: 100%;
+            height: 40px;
+            margin: 20px 0px;
+        }
+
+        a {
+            display: block;
+            text-decoration: none;
+            text-align: center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Facebook</h1>
+    <form action="" method="POST">
+        <h2>Create a new account</h2>
+        <p>Its quick and easy</p>
+        <hr>
+        <br />
+        <input type="text" name="firstName" id="firstName" placeholder="First name">
+        <input type="text" name="surName" id="surName" placeholder="Surname">
+        <br />
+        <input type="email" name="email" id="email" placeholder="Email Address">
+        <br />
+        <input type="password" name="password" id="password" placeholder="New Password">
+        <br>
+        <div id="date-of-birth">
+            <label for="dob">Date of birth</label>
+            <br />
+            <select name="date" id="dob">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14" selected>14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+            </select>
+            <select name="month" id="dob">
+                <option value="January">Jan</option>
+                <option value="February">Feb</option>
+                <option value="March">Mar</option>
+                <option value="April">Apr</option>
+                <option value="May" selected>May</option>
+                <option value="June">Jun</option>
+                <option value="July">Jul</option>
+                <option value="August">Aug</option>
+                <option value="September">Sept</option>
+                <option value="October">Oct</option>
+                <option value="November">Nov</option>
+                <option value="December">Dec</option>
+            </select>
+            <select name="year" id="dob">
+                <option value="2022" selected>2022</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+                <option value="2017">2017</option>
+            </select>
+        </div>
+        <div id="radio-button">
+            <p>Gender</p>
+            <input type="radio" id="female" name="gender" value="female" checked>
+            <label for="female">Female</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="custom" name="gender" value="custom">
+            <label for="custom">Custom</label>
+        </div>
+        <br />
+        <p>By Clicking Sign Up, you agree to our Terms, Data Policy and Cookie Policy.</p>
+        <button type="submit" value="Sign Up">Sign Up
+        </button>
+        <br />
+        <a href="#">Already have an account?</a>
+    </form>
+</body>
+
+</html>
