@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <style>
+        .checkout {
+            padding: 10px;
+            display: flex;
+
+        }
+
+        /* FORM */
+        .form {
+            padding: 10px;
+            flex: 1;
+        }
+
+        input,
+        select {
+            border: none;
+            background-color: #d8d3d3;
+            height: 25px;
+            margin: 10px 0;
+        }
+
+        .form .name {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .name div {
+            padding: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        select {
+            width: 100%;
+        }
+
+        textarea {
+            border: none;
+            background-color: #d8d3d3;
+            width: 100%;
+            height: 150px;
+        }
+
+        .form button {
+            width: 100%;
+            border: 4px solid orangered;
+            color: orangered;
+            background-color: none;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        /* ORDER SUMMARY */
+        .orderSummary {
+            flex: 1;
+        }
+
+        .orderSummary section {
+            border: 1px solid #d8d3d3;
+            padding: 10px;
+            margin: 20px;
+        }
+
+        .cartItems>div {
+            display: flex;
+            border: 1px solid #d8d3d3;
+            margin: 10px;
+        }
+
+        .cartItems img {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+        }
+
+        .cartItems ul {
+            margin: 0;
+            list-style-type: none;
+        }
+
+        .billingAmount div {
+            display: flex;
+            justify-content: space-between;
+            line-height: 0;
+        }
+
+        .paymentInfo button {
+            width: 100%;
+            background-color: orangered;
+            color: #fff;
+            border: none;
+            border-radius: 2px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="checkout">
+        <form class="form">
+            <h3>DELIVERY INFORMATION</h3>
+            <div>
+                <input type="checkbox">
+                Use default shipping an billing address
+            </div>
+            <div class="name">
+                <div>
+                    <label for="firstName">FIRST NAME *</label><br>
+                    <input type="text" name="name" id="firstName">
+                </div>
+                <div>
+                    <label for="lastName">LAST NAME *</label><br>
+                    <input type="text" name="name" id="lastName">
+                </div>
+            </div>
+            <div>
+                <label for="email">EMAIL *</label><br>
+                <input type="email" name="email" id="email">
+            </div>
+            <div>
+                <label for="phone">PHONE *</label><br>
+                <input type="number" name="phone" id="phone">
+            </div>
+            <div>
+                <label for="address">ADDRESS *</label><br>
+                <input type="text" name="address1" id="address" placeholder="address1">
+                <input type="text" name="address2" id="address" placeholder="address2">
+            </div>
+            <div>
+                <label for="country">COUNTRY *</label><br>
+                <select name="country" id="country">
+                    <option value="india">INDIA</option>
+                    <option value="india">NEPAL</option>
+                    <option value="india">SRILANKA</option>
+                    <option value="india">MYANMAR</option>
+                </select>
+            </div>
+            <div>
+                <label for="city">TOWN / CITY</label><br>
+                <input type="text" name="city" id="city">
+            </div>
+            <div>
+                <label for="state">STATE / PROVINCE *</label><br>
+                <select name="state" id="state">
+                    <option value="karnataka">KARNATAKA</option>
+                    <option value="kerala">KERALA</option>
+                    <option value="tamilNadu">TAMIL NADU</option>
+                    <option value="andhra">ANDHRA PRADESH</option>
+                </select>
+            </div>
+            <div>
+                <label for="zipcode">ZIP / POSTAL CODE *</label><br>
+                <input type="number" name="zipcode" id="zipcode">
+            </div>
+            <div>
+                <label for="note">ORDER NOTE</label><br>
+                <textarea name="note" id="note"></textarea>
+            </div>
+            <button>
+                SAVE
+            </button>
+        </form>
+
+        <section class="orderSummary">
+            <h3>ORDER SUMMARY</h3>
+            <section class="cartItems">
+                <div>
+                    <img src="./images/blank-page.jpeg" alt="image">
+                    <ul>
+                        <li>
+                            <h3>Yellow Wireless Headphone</h3>
+                        </li>
+                        <li>Quantity: 1</li>
+                        <li>$25.00</li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="./images/blank-page.jpeg" alt="image">
+                    <ul>
+                        <li>
+                            <h3>Nikon DSLR Camera</h3>
+                        </li>
+                        <li>Quantity: 1</li>
+                        <li>$125.00</li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <h3>SHIPPING & BILLING</h3>
+                <p>Ship No:</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur </p>
+            </section>
+            <section class="billingAmount">
+                <div>
+                    <h5>SHIPPING</h5>
+                    <h5>$4</h5>
+                </div>
+                <div>
+                    <h5>TAX</h5>
+                    <h5>$8</h5>
+                </div>
+                <div>
+                    <h5>SUBTOTAL</h5>
+                    <h5>$162</h5>
+                </div>
+                <div>
+                    <h5>GRAND TOTAL</h5>
+                    <h5>$162</h5>
+                </div>
+            </section>
+            <section class="paymentInfo">
+                <h3>PAYMENT INFORMATION</h3>
+                <div>
+                    <input type="checkbox"> Cash On Delivery
+                </div>
+                <div>
+                    <input type="checkbox"> Pay via Check
+                </div>
+                <div>
+                    <input type="checkbox"> Pay Pal
+                </div>
+                <button>
+                    PLACE ORDER
+                </button>
+            </section>
+        </section>
+    </section>
+</body>
+
+</html>

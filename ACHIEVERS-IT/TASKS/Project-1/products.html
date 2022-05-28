@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        /* PRODUCT CONTAINER */
+        .productsContainer {
+            display: flex;
+            padding: 5px;
+        }
+
+        /* FILTER CONTAINER */
+        .filtersContainer {
+            margin: 2px;
+            flex: 3;
+        }
+
+        .filtersContainer h2 {
+            margin: 20px;
+        }
+
+        .filtersContainer section {
+            box-shadow: 0 0 8px #dad1d1;
+            margin: 20px 5px;
+            height: 250px;
+        }
+
+        .filtersContainer section div:first-child {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #dad1d1;
+        }
+
+        section div {
+            padding: 10px 20px;
+        }
+
+        ul li {
+            list-style-type: none;
+        }
+
+        section button {
+            border: none;
+            cursor: pointer;
+            background-color: transparent;
+        }
+
+        /* PRODUCT LIST */
+        .productsListContainer {
+            margin: 2px;
+            flex: 9;
+        }
+
+        /* PRODUCT LIST - RESULTS SECTION */
+        .productsListContainer .results {
+            box-shadow: 5px 5px 5px #dad1d1;
+            margin: 2px;
+            height: 75px;
+            padding: 10px 10px 10px 10px;
+        }
+
+        .results h3 {
+            margin: 0;
+        }
+
+        .results button {
+            background-color: orangered;
+            color: #fff;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            margin: 0 5px;
+        }
+
+
+        /* PRODUCT LIST - PRODUCTS */
+        .productsListContainer .products {
+            margin: 2px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: minmax(200px, auto);
+            grid-gap: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            /* This is cz the images were overflowing from the grid cz of its dimensions */
+        }
+
+        figcaption>* {
+            margin: 2px;
+        }
+
+        /* Product Page Links */
+        .productPageLink {
+            width: 20%;
+            margin: 20px auto;
+        }
+
+        .productPageLink a {
+            text-decoration: none;
+            padding: 12px;
+            margin: 4px;
+            border-radius: 50%;
+            background-color: #dad1d1;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="productsContainer">
+        <section class="filtersContainer">
+            <h2>FILTERS</h2>
+            <section>
+                <div>
+                    <h3>CATEGORY</h3>
+                    <button>-</button>
+                </div>
+                <div>
+                    Electronics
+                    <ul>
+                        <li>3D Printer & Supplies<button>+</button></li>
+                        <li>Home Audio & Video<button>+</button></li>
+                        <li>Media Players<button>+</button></li>
+                        <li>Video Game Accessories<button>+</button></li>
+                        <li>Security & Protection<button>+</button></li>
+                        <li>Home Audio & Video<button>-</button></li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <h3>RATING</h3>
+                    <button>-</button>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <h3>SHIPPING</h3>
+                    <button>-</button>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <h3>PRICE</h3>
+                    <button>-</button>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <h3>MANUFACTURER</h3>
+                    <button>-</button>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <h3>COLOR</h3>
+                    <button>-</button>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <h3>SIZE</h3>
+                    <button>-</button>
+                </div>
+            </section>
+        </section>
+        <section class="productsListContainer">
+            <section class="results">
+                <h3>FOUND 18 RESULTS</h3>
+                <p>
+                    Related searches:
+                    <button>men's clothing</button>
+                    <button>mobiles & tablets</button>
+                    <button>books & audible</button>
+                </p>
+            </section>
+            <section class="products">
+                <figure>
+                    <a href="./products-details.html">
+                        <img src="./images/blank-page.jpeg" alt="">
+                    </a>
+
+                    <figcaption>
+                        <p>Men's Clothing</p>
+                        <h4>New Fashion B Nice Elegant</h4>
+                        <p>$125.00</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="./images/blank-page.jpeg" alt="">
+                    <figcaption>
+                        <p>Men's Clothing</p>
+                        <h4>New Fashion B Nice Elegant</h4>
+                        <p>$125.00</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="./images/blank-page.jpeg" alt="">
+                    <figcaption>
+                        <p>Men's Clothing</p>
+                        <h4>New Fashion B Nice Elegant</h4>
+                        <p>$125.00</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="./images/blank-page.jpeg" alt="">
+                    <figcaption>
+                        <p>Men's Clothing</p>
+                        <h4>New Fashion B Nice Elegant</h4>
+                        <p>$125.00</p>
+                    </figcaption>
+                </figure>
+                </figure>
+                <figure>
+                    <img src="./images/blank-page.jpeg" alt="">
+                    <figcaption>
+                        <p>Men's Clothing</p>
+                        <h4>New Fashion B Nice Elegant</h4>
+                        <p>$125.00</p>
+                    </figcaption>
+                </figure>
+                </figure>
+                <figure>
+                    <img src="./images/blank-page.jpeg" alt="">
+                    <figcaption>
+                        <p>Men's Clothing</p>
+                        <h4>New Fashion B Nice Elegant</h4>
+                        <p>$125.00</p>
+                    </figcaption>
+                </figure>
+                </figure>
+                <figure>
+                    <img src="./images/blank-page.jpeg" alt="">
+                    <figcaption>
+                        <p>Men's Clothing</p>
+                        <h4>New Fashion B Nice Elegant</h4>
+                        <p>$125.00</p>
+                    </figcaption>
+                </figure>
+                </figure>
+                <figure>
+                    <img src="./images/blank-page.jpeg" alt="">
+                    <figcaption>
+                        <p>Men's Clothing</p>
+                        <h4>New Fashion B Nice Elegant</h4>
+                        <p>$125.00</p>
+                    </figcaption>
+                </figure>
+                </figure>
+                <figure>
+                    <img src="./images/blank-page.jpeg" alt="">
+                    <figcaption>
+                        <p>Men's Clothing</p>
+                        <h4>New Fashion B Nice Elegant</h4>
+                        <p>$125.00</p>
+                    </figcaption>
+                </figure>
+                </figure>
+                <figure>
+                    <img src="./images/blank-page.jpeg" alt="">
+                    <figcaption>
+                        <p>Men's Clothing</p>
+                        <h4>New Fashion B Nice Elegant</h4>
+                        <p>$125.00</p>
+                    </figcaption>
+                </figure>
+                </figure>
+                <figure>
+                    <img src="./images/blank-page.jpeg" alt="">
+                    <figcaption>
+                        <p>Men's Clothing</p>
+                        <h4>New Fashion B Nice Elegant</h4>
+                        <p>$125.00</p>
+                    </figcaption>
+                </figure>
+                </figure>
+                <figure>
+                    <img src="./images/blank-page.jpeg" alt="">
+                    <figcaption>
+                        <p>Men's Clothing</p>
+                        <h4>New Fashion B Nice Elegant</h4>
+                        <p>$125.00</p>
+                    </figcaption>
+                </figure>
+                </figure>
+                <figure>
+                    <img src="./images/blank-page.jpeg" alt="">
+                    <figcaption>
+                        <p>Men's Clothing</p>
+                        <h4>New Fashion B Nice Elegant</h4>
+                        <p>$125.00</p>
+                    </figcaption>
+                </figure>
+                </figure>
+                <figure>
+                    <img src="./images/blank-page.jpeg" alt="">
+                    <figcaption>
+                        <p>Men's Clothing</p>
+                        <h4>New Fashion B Nice Elegant</h4>
+                        <p>$125.00</p>
+                    </figcaption>
+                </figure>
+                </figure>
+                <figure>
+                    <img src="./images/blank-page.jpeg" alt="">
+                    <figcaption>
+                        <p>Men's Clothing</p>
+                        <h4>New Fashion B Nice Elegant</h4>
+                        <p>$125.00</p>
+                    </figcaption>
+                </figure>
+            </section>
+            <div class="productPageLink">
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+            </div>
+        </section>
+    </section>
+</body>
+
+</html>
